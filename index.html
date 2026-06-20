@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Younes Akli — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════
+       CURSOR DOT
+  ══════════════════════════════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ══════════════════════════════
+       NAV
+  ══════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-brand">YA<span class="brand-dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-end">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+        <span id="themeIcon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section id="hero">
+    <!-- Diagonal split background -->
+    <div class="hero-bg-left"></div>
+    <div class="hero-bg-right"></div>
+
+    <!-- Floating code blobs -->
+    <div class="code-blob cb1"><pre>&lt;html&gt;<br>&lt;body&gt;<br>  👋<br>&lt;/body&gt;<br>&lt;/html&gt;</pre></div>
+    <div class="code-blob cb2"><pre>def build():<br>  return "🚀"</pre></div>
+    <div class="code-blob cb3"><pre>SELECT * <br>FROM skills<br>WHERE passion=1</pre></div>
+
+    <div class="hero-inner">
+      <!-- Left: Text -->
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          Étudiant · Développeur · Créateur
+        </div>
+        <h1 class="hero-name">
+          <span class="name-first">Younes</span>
+          <span class="name-last">Akli</span>
+        </h1>
+        <p class="hero-tagline">
+          Je construis des expériences web <em>modernes</em> et des applications <em>robustes</em> — du front au back.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="cta-primary">Voir mes projets</a>
+          <a href="mailto:akliyounes.2003@gmail.com" class="cta-secondary">Me contacter</a>
+        </div>
+        <div class="hero-meta">
+          <span>📍 France</span>
+          <span class="meta-sep">·</span>
+          <span>🎓 Université Marie & Louis Pasteur</span>
+          <span class="meta-sep">·</span>
+          <span class="available-badge">Disponible</span>
+        </div>
+      </div>
+
+      <!-- Right: Photo -->
+      <div class="hero-photo-wrap">
+        <div class="photo-ring"></div>
+        <div class="photo-frame">
+          <img src="profil.jpg" alt="Younes Akli" id="profileImg" onerror="this.style.display='none'; document.getElementById('profileFallback').style.display='flex';" />
+          <div class="profile-fallback" id="profileFallback">
+            <span class="fallback-initial">Y</span>
+            <span class="fallback-hint">profil.png</span>
+          </div>
+        </div>
+        <div class="photo-badge">I2A</div>
+        <div class="photo-card pc1">💻 Full Stack</div>
+        <div class="photo-card pc2">⚡ 5+ projets</div>
+      </div>
+    </div>
+
+    <!-- Tech strip -->
+    <div class="tech-strip">
+      <div class="tech-strip-inner">
+        <span>Python</span><span>·</span>
+        <span>PHP</span><span>·</span>
+        <span>JavaScript</span><span>·</span>
+        <span>Java</span><span>·</span>
+        <span>C++</span><span>·</span>
+        <span>SQL</span><span>·</span>
+        <span>Docker</span><span>·</span>
+        <span>HTML/CSS</span><span>·</span>
+        <span>Prolog</span><span>·</span>
+        <span>OpenGL</span><span>·</span>
+        <span>Python</span><span>·</span>
+        <span>PHP</span><span>·</span>
+        <span>JavaScript</span><span>·</span>
+        <span>Java</span><span>·</span>
+        <span>C++</span><span>·</span>
+        <span>SQL</span><span>·</span>
+        <span>Docker</span><span>·</span>
+        <span>HTML/CSS</span><span>·</span>
+        <span>Prolog</span><span>·</span>
+        <span>OpenGL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       ABOUT
+  ══════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-layout">
+
+        <!-- Image collage -->
+        <div class="about-collage reveal">
+          <div class="collage-main">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="Code" />
+            <div class="collage-overlay">
+              <span>Développeur passionné</span>
+            </div>
+          </div>
+          <div class="collage-side">
+            <div class="collage-sm">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&q=80" alt="Laptop" />
+            </div>
+            <div class="collage-stat-box">
+              <div class="cstat-num">8+</div>
+              <div class="cstat-label">Langages</div>
+            </div>
+            <div class="collage-sm">
+              <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&q=80" alt="Dev" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-content reveal">
+          <p class="section-eyebrow">À propos</p>
+          <h2 class="section-heading">Construire, apprendre,<br><em>recommencer</em></h2>
+          <p class="about-body">
+            Étudiant en <strong>Informatique I2A</strong> à l'Université Marie et Louis Pasteur, je développe des applications web et logicielles depuis plusieurs années. Mon parcours mêle rigueur académique et projets concrets.
+          </p>
+          <p class="about-body">
+            J'ai conçu des sites e-commerce, des dashboards interactifs, un gestionnaire de bibliothèque étudiante — et j'explore activement l'IA, la vérification formelle et le rendu 3D.
+          </p>
+          <div class="about-stats-row">
+            <div class="astat">
+              <span class="astat-n">5+</span>
+              <span class="astat-l">Sites déployés</span>
+            </div>
+            <div class="astat">
+              <span class="astat-n">3+</span>
+              <span class="astat-l">Ans d'expérience</span>
+            </div>
+            <div class="astat">
+              <span class="astat-n">∞</span>
+              <span class="astat-l">Curiosité</span>
+            </div>
+          </div>
+          <div class="about-info">
+            <div class="ainfo-item">
+              <span class="ainfo-icon">📧</span>
+              <a href="mailto:akliyounes.2003@gmail.com">akliyounes.2003@gmail.com</a>
+            </div>
+            <div class="ainfo-item">
+              <span class="ainfo-icon">📱</span>
+              <a href="tel:0775710403">07 75 71 04 03</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SKILLS
+  ══════════════════════════════ -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Compétences</p>
+        <h2 class="section-heading">Mon <em>arsenal</em> technique</h2>
+      </div>
+
+      <div class="skills-bento reveal">
+        <!-- Wide card -->
+        <div class="bento-card bento-wide bento-prog">
+          <div class="bento-img-bg">
+            <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=800&q=60" alt="Code" />
+          </div>
+          <div class="bento-content">
+            <div class="bento-icon">💻</div>
+            <h3>Programmation</h3>
+            <div class="bento-tags">
+              <span>Python</span><span>PHP</span><span>Java</span>
+              <span>JavaScript</span><span>C++</span><span>SQL</span><span>Prolog</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tall card -->
+        <div class="bento-card bento-tall bento-web">
+          <div class="bento-img-bg">
+            <img src="https://cdn.pixabay.com/photo/2016/11/23/14/45/coding-1853305_1280.jpg" alt="Web" />
+          </div>
+          <div class="bento-content">
+            <div class="bento-icon">🌐</div>
+            <h3>Web</h3>
+            <div class="bento-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              <span>PHP</span><span>Sites dynamiques</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Small card -->
+        <div class="bento-card bento-sm bento-db">
+          <div class="bento-img-bg">
+            <img src="https://www.atulhost.com/wp-content/uploads/2024/01/database.jpg" alt="Bases de donnees" />
+          </div>
+          <div class="bento-content">
+            <div class="bento-icon">🗄️</div>
+            <h3>Bases de données</h3>
+            <div class="bento-tags">
+              <span>MySQL</span><span>MariaDB</span><span>Conception</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Small card -->
+        <div class="bento-card bento-sm bento-tools">
+          <div class="bento-img-bg">
+            <img src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=400&q=60" alt="Tools" />
+          </div>
+          <div class="bento-content">
+            <div class="bento-icon">🛠️</div>
+            <h3>Outils</h3>
+            <div class="bento-tags">
+              <span>Docker</span><span>Git</span><span>WampServer</span><span>Why3</span><span>Knime</span><span>Adobe</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wide bottom card -->
+        <div class="bento-card bento-ai">
+                <div class="bento-img-bg">
+            <img src="https://flowragency.com/wp-content/uploads/2023/05/13311391_v617-bb-04-technology-1024x683.jpg" alt="Bases de donnees" />
+          </div>
+          <div class="bento-content">
+            <div class="bento-icon">🤖</div>
+            <h3>IA & Formel</h3>
+            <div class="bento-tags">
+              <span>Machine Learning</span><span>Arbres ID3</span>
+              <span>Logique de Hoare</span><span>Vérif. formelle</span>
+              <span>OpenGL / GLSL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       PROJECTS
+  ══════════════════════════════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Projets</p>
+        <h2 class="section-heading">Ce que j'ai <em>construit</em></h2>
+      </div>
+
+      <!-- Featured projects -->
+      <div class="projects-featured">
+
+        <div class="proj-card feat reveal">
+          <div class="proj-visual">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&q=80" alt="Phones" class="proj-bg-img" />
+            <div class="proj-visual-overlay"></div>
+            <div class="proj-preview-wrap">
+              <iframe src="https://akliyounes2003-beep.github.io/phones_shop/" loading="lazy" title="InfinityPhone" scrolling="no"></iframe>
+            </div>
+            <span class="proj-live-badge">● LIVE</span>
+          </div>
+          <div class="proj-info">
+            <div class="proj-number">01</div>
+            <h3 class="proj-title">InfinityPhone</h3>
+            <p class="proj-sub">Réservation de téléphones</p>
+            <p class="proj-desc">Plateforme de réservation de smartphones avec catalogue interactif, animations fluides, design premium et système de commande intégré.</p>
+            <div class="proj-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="https://akliyounes2003-beep.github.io/phones_shop/" target="_blank" class="proj-cta">
+              Voir le site <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="proj-card feat feat-reverse reveal">
+          <div class="proj-visual">
+            <img src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?w=800&q=80" alt="Premium phones" class="proj-bg-img" />
+            <div class="proj-visual-overlay"></div>
+            <div class="proj-preview-wrap">
+              <iframe src="https://akliyounes2003-beep.github.io/akliyounes2003-beep.io/" loading="lazy" title="PhoneStore" scrolling="no"></iframe>
+            </div>
+            <span class="proj-live-badge">● LIVE</span>
+          </div>
+          <div class="proj-info">
+            <div class="proj-number">02</div>
+            <h3 class="proj-title">PhoneStore</h3>
+            <p class="proj-sub">Smartphones Premium</p>
+            <p class="proj-desc">Site e-commerce de smartphones haut de gamme avec galerie produits, fiches techniques détaillées et expérience d'achat soignée.</p>
+            <div class="proj-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="https://akliyounes2003-beep.github.io/akliyounes2003-beep.io/" target="_blank" class="proj-cta">
+              Voir le site <span class="arrow">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="proj-card feat reveal">
+          <div class="proj-visual">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80" alt="Travel website" class="proj-bg-img" />
+            <div class="proj-visual-overlay"></div>
+            <div class="proj-preview-wrap">
+              <iframe src="https://akliyounes2003-beep.github.io/agence_voyage/" loading="lazy" title="YA Travel" scrolling="no"></iframe>
+            </div>
+            <span class="proj-live-badge">LIVE</span>
+          </div>
+          <div class="proj-info">
+            <div class="proj-number">03</div>
+            <h3 class="proj-title">YA Travel</h3>
+            <p class="proj-sub">Site de voyage</p>
+            <p class="proj-desc">Site de voyage moderne avec presentation des destinations, visuels immersifs, navigation fluide et experience responsive pensee pour inspirer les visiteurs.</p>
+            <div class="proj-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a href="https://akliyounes2003-beep.github.io/agence_voyage/" target="_blank" class="proj-cta">
+              Voir le site <span class="arrow">&rarr;</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other projects grid -->
+      <div class="other-proj-grid reveal">
+        <div class="other-proj-card">
+          <div class="opcard-img">
+            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=500&q=80" alt="Bibliothèque" />
+            <div class="opcard-overlay"></div>
+          </div>
+          <div class="opcard-body">
+            <span class="opcard-tag">PHP · MySQL</span>
+            <h4>Gestionnaire de bibliothèque</h4>
+            <p>Application de gestion des emprunts et retours de livres pour étudiants. Authentification, base de données relationnelle, interface complète.</p>
+          </div>
+        </div>
+        <div class="other-proj-card">
+          <div class="opcard-img">
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=500&q=80" alt="Voyage" />
+            <div class="opcard-overlay"></div>
+          </div>
+          <div class="opcard-body">
+            <span class="opcard-tag">JS · Chart.js · GSAP</span>
+            <h4>Dashboard Agence de voyage</h4>
+            <p>Tableau de bord interactif avec graphiques en temps réel, animations avancées GSAP et canvas animé.</p>
+          </div>
+        </div>
+        <div class="other-proj-card">
+          <div class="opcard-img">
+            <img src="https://www.netcost-security.fr/wp-content/uploads/2023/06/Explorer-les-meilleurs-smartphones-haut-de-gamme-de-2023.jpg" alt="Téléphones" />
+            <div class="opcard-overlay"></div>
+          </div>
+          <div class="opcard-body">
+            <span class="opcard-tag">PHP · MySQL</span>
+            <h4>Gestionnaire de telephones</h4>
+            <p>Site pour la gestion du stock des téléphones, avec interface utilisateur intuitive et fonctionnalités de recherche et de filtrage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CONTACT
+  ══════════════════════════════ -->
+  <section id="contact" class="contact-section">
+    <div class="contact-bg-img">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=60" alt="Background" />
+      <div class="contact-bg-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="contact-box reveal">
+        <div class="contact-left">
+          <p class="section-eyebrow light">Contact</p>
+          <h2 class="contact-heading">Travaillons<br><em>ensemble</em></h2>
+          <p class="contact-body">
+            Ouvert aux opportunités de stage, alternance ou collaboration. Je réponds rapidement !
+          </p>
+          <a href="mailto:akliyounes.2003@gmail.com" class="cta-primary big-cta">
+            Envoyer un email →
+          </a>
+        </div>
+        <div class="contact-right">
+          <div class="cinfo-card">
+            <span class="cinfo-icon">📧</span>
+            <div>
+              <div class="cinfo-label">Email</div>
+              <a href="mailto:akliyounes.2003@gmail.com" class="cinfo-val">akliyounes.2003@gmail.com</a>
+            </div>
+          </div>
+          <div class="cinfo-card">
+            <span class="cinfo-icon">📱</span>
+            <div>
+              <div class="cinfo-label">Téléphone</div>
+              <a href="tel:0775710403" class="cinfo-val">07 75 71 04 03</a>
+            </div>
+          </div>
+          <div class="cinfo-card">
+            <span class="cinfo-icon">🎓</span>
+            <div>
+              <div class="cinfo-label">Formation</div>
+              <span class="cinfo-val">Université Marie et Louis Pasteur — I2A</span>
+            </div>
+          </div>
+          <div class="cinfo-card">
+            <span class="cinfo-icon">💼</span>
+            <div>
+              <div class="cinfo-label">Statut</div>
+              <span class="cinfo-val available">● Disponible</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">YA<span>.</span></span>
+      <span class="footer-copy">© 2026 Younes Akli — Tous droits réservés</span>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
